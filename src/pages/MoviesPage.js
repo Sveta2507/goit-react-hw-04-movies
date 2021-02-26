@@ -1,9 +1,7 @@
 import React, { Component } from "react";
-// import queryString from 'query-string';
 import queryString from "query-string";
 import { getQuery } from "../services/usefulApi";
 import { NavLink } from "react-router-dom";
-// import style from './MovieDetailsPage.module.css';
 
 export default class MoviePage extends Component {
   state = {

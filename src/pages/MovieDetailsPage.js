@@ -6,10 +6,10 @@ import MoviePreview from "../components/MoviePrev/MoviePrev";
 import classes from "./MovieDetailsPage.module.css";
 
 const Cast = lazy(() =>
-  import("../components/Cast/Cast" /* webpackChunkName: "cast-page" */)
+  import("../components/Cast/Cast")
 );
 const Reviews = lazy(() =>
-  import("../components/Reviews/Reviews" /* webpackChunkName: "reviews-page" */)
+  import("../components/Reviews/Reviews")
 );
 
 class MovieDetailsPage extends Component {
