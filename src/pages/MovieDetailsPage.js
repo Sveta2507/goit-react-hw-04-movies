@@ -36,11 +36,9 @@ class MovieDetailsPage extends Component {
     const { location, history } = this.props;
     if (location.state && location.state.from) {
       history.push(location.state.from);
-      console.log("step1");
       console.log(location.state.from);
       return;
     }
-    console.log("step2");
     history.push(routes.home);
   };
 
