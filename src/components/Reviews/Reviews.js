@@ -6,12 +6,14 @@ class Reviews extends Component {
   state = {
     content: [],
   };
+  
   componentDidMount() {
     const { moviesId } = this.props.match.params;
     reviews(moviesId).then((data) => {
       this.setState({ content: data.results });
     });
   }
+
   render() {
     console.log(this.state.content);
     return (

@@ -8,6 +8,7 @@ export default class MoviePage extends Component {
     results: [],
     value: "",
   };
+
   componentDidMount() {
     const { value } = this.props.location.search;
     console.log(value);
@@ -25,6 +26,7 @@ export default class MoviePage extends Component {
       this.searchMovie(newQuery);
     }
   }
+
   searchMovie(value) {
     getQuery(value).then((data) => {
       this.setState({ results: data.results });
